@@ -21,7 +21,7 @@ export default function header() {
             </div>
           </div>
           <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p className="leading-relaxed text-md mb-4">Hey 👋, I'm Subham Prasad Panda. currently living in India. Graduated from GIET University. My majors are Computer Science and Electronics.
+            <p className="leading-relaxed text-md mb-4">Hey 👋, I'm Subham Prasad Panda.Currently living in Odisha,India.Graduated from GIET University. My majors are Computer Science and Electronics.
             So far i have learned different technologies like Java, cpp, MySQL, Servlet, JSP, Hibernate Framework, Bootstrap, ReactJs ,MaterialUI.
             I am skilled in the use of these frameworks to develop web Apps based on Single Page Applications (SPA) architectures. Apart from these frameworks i have also skilled on SAP ABAP, i have worked on different project related to Report & Dialogue Program, Modularization, Enhancement, BAdI, ALVs, Function Module etc..  
             .I love the logic and structure of coding and always strive to write elegant and efficient code.
