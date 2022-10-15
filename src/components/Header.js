@@ -44,7 +44,7 @@ export default function header() {
                 <a
                   className="text-indigo-500 inline-flex items-center"
                   download="Subham Panda Resume"
-                  href="Resume-2022-Q3.pdf"
+                  href="resume.pdf"
                 >
                   Learn More
                   <svg
