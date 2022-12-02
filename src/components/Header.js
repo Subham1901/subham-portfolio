@@ -28,23 +28,23 @@ export default function header() {
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <p className="leading-relaxed text-md mb-4">
-                  Hey 👋, I'm Subham Prasad Panda.Currently living in
-                  Odisha,India. Graduated from GIET University. My majors are
-                  Computer Science and Electronics. So far i have learned
-                  different technologies like Java, cpp, MySQL, Servlet, JSP,
-                  Hibernate Framework, Bootstrap, ReactJs, NodeJs, ExpressJs,
-                  MaterialUI. I am skilled in the use of these frameworks to
-                  develop web Apps based on Single Page Applications (SPA)
-                  architectures. Apart from these frameworks i have also skilled
-                  on SAP ABAP, i have worked on different projects related to
-                  Report & Dialogue Program, Modularization, Enhancement, BAdI,
-                  ALVs, Function Module etc.. .I love the logic and structure of
-                  coding and always strive to write elegant and efficient code.
+                   Hey 👋, I'm Subham Prasad Panda. I am currently residing in
+                  Hyderabad, India. graduated from GIET University. My majors
+                  are electronics and computer science. So far, I have worked
+                  with Node.js, Express.js, React.js, Java, J2EE, and other
+                  technologies I am skilled in the use of these technologies and
+                  have worked with different NPM modules to build web
+                  applications based on single-page application (SPA)
+                  architectures. Apart from these technologies, I have also
+                  worked on various projects involving SAP ABAP, Report &
+                  Dialogue Program, Modularization, Enhancement, BAdI, ALVs,
+                  function modules, and so on. I love the logic and structure of
+                  coding and strive to write elegant, efficient code.
                 </p>
                 <a
                   className="text-indigo-500 inline-flex items-center"
                   download="Subham Panda Resume"
-                  href="Resume_Sub.pdf"
+                  href="Subham_Resume.pdf"
                 >
                   Learn More
                   <svg
