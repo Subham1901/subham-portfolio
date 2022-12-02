@@ -7,6 +7,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEMail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   var templateParams = {
     name: name,
@@ -15,50 +16,53 @@ export default function Contact() {
   };
 
   const sendMail = (e) => {
-    if (name == "") {
-      toast.error("Name cannot be blank!", {
+    e.preventDefault();
+    setLoading(true);
+    if (!name || !email || !message) {
+      setLoading(false);
+      return toast.error("Invalid Data", {
         position: toast.POSITION.TOP_CENTER,
+        theme: "colored",
+        autoClose: 1000,
       });
     }
-    if (message == "") {
-      toast.error("Message cannot be blank!", {
+    if (!validator.isEmail(email)) {
+      setLoading(false);
+      return toast.error("Invalid Email", {
         position: toast.POSITION.TOP_CENTER,
+        theme: "colored",
+        autoClose: 1000,
       });
     }
-    if (
-      /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}/g.test(email.toLowerCase()) &
-      (name != "") &
-      (message != "")
-    ) {
-      e.preventDefault();
-      emailjs
-        .send(
-          "service_j3qbits",
-          "template_m3axiew",
-          templateParams,
-          "LDBnLdh1iNHzPhEX-"
-        )
-        .then(
-          (response) => {
-            if (response.status == "200") {
-              toast.success("Message sent successfully!", {
-                position: toast.POSITION.TOP_CENTER,
-                autoClose: 1000,
-              });
-              setTimeout(() => {
-                window.location.reload();
-              }, 5000);
-            }
-          },
-          (error) => {
-            toast.success("Server issue, please try later!");
+
+    emailjs
+      .send(
+        "service_j3qbits",
+        "template_m3axiew",
+        templateParams,
+        "LDBnLdh1iNHzPhEX-"
+      )
+      .then(
+        (response) => {
+          if (response.status == "200") {
+            setLoading(false);
+            toast.success("Message sent successfully!", {
+              position: toast.POSITION.TOP_CENTER,
+              autoClose: 1000,
+              theme: "colored",
+            });
+            setTimeout(() => {
+              window.location.reload();
+            }, 2000);
           }
-        );
-    } else {
-      toast.error("Invalid Email !", {
-        position: toast.POSITION.TOP_CENTER,
-      });
-    }
+        },
+        (error) => {
+          setLoading(false);
+          toast.warning("Server issue, please try later!", {
+            theme: "colored",
+          });
+        }
+      );
   };
 
   return (
@@ -124,7 +128,7 @@ export default function Contact() {
                 onClick={(e) => sendMail(e)}
                 className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
               >
-                Send
+                {loading ? "Sending..." : "Send"}
               </button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"></div>
