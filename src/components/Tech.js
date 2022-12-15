@@ -12,6 +12,7 @@ import chakra from "./assets/chakra.png";
 import api from "./assets/api.png";
 import redux from "./assets/redux.webp";
 import tailwind from "./assets/tailwind.png";
+import sql from "./assets/mysql.png";
 import {
   Container,
   HStack,
@@ -78,6 +79,10 @@ function Tech() {
           <VStack>
             <Avatar m={3} size={["lg", "xl"]} name="node" src={api} />
             <Text>API</Text>
+          </VStack>
+          <VStack>
+            <Avatar m={3} size={["lg", "xl"]} name="node" src={sql} />
+            <Text>MySQL</Text>
           </VStack>
         </Stack>
 
