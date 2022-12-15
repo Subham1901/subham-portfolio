@@ -4,10 +4,12 @@ import "./index.css";
 import App from "./App";
 import "react-toastify/dist/ReactToastify.css";
 import "animate.css/animate.min.css";
-
+import { ChakraProvider } from "@chakra-ui/react";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>
 );
