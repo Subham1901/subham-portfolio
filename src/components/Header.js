@@ -13,7 +13,7 @@ export default function header() {
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                   <img
-                    class="inline-block h-20 w-15 rounded "
+                    class="inline-block h-20 w-15 rounded"
                     src="subham.png"
                     alt="subhampic"
                   />
