@@ -21,13 +21,13 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-
+import "../index.css";
 function Tech() {
   return (
-    <>
+    <div className="tech">
       <Container maxW={["container.lg"]}>
         <h1 className="sm:text-3xl text-2xl text-center font-medium title-font mb-4 text-gray-900">
-          SKills & Experiences
+          Skills & Experiences
         </h1>
         <Stack
           display={"flex"}
@@ -106,7 +106,7 @@ function Tech() {
           </VStack>
         </HStack>
       </Container>
-    </>
+    </div>
   );
 }
 

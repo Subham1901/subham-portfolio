@@ -7,11 +7,8 @@ import Tech from "./components/Tech";
 
 function App() {
   return (
-    <div>
+    <div className="main-container">
       <Header />
-      <h1 className="sm:text-3xl text-2xl text-center font-medium title-font mb-4 text-gray-900">
-        My Projects
-      </h1>
       <Content />
       <Tech />
       <Contact />
