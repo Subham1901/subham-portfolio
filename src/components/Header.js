@@ -30,12 +30,12 @@ export default function header() {
                     Hey 👋, I'm Subham Prasad Panda. I am currently residing in
                     Hyderabad, India. graduated from GIET University. My majors
                     are electronics and computer science. So far, I have worked
-                    with Node.js, Express.js, React.js, Java, J2EE, and other
-                    technologies I am skilled in the use of these technologies
-                    and have worked with different NPM modules to build web
-                    applications based on single-page application (SPA)
-                    architectures. Apart from these technologies, I have also
-                    worked on various projects involving SAP ABAP, Report &
+                    with Node.js, Express.js, React.js, MongoDB, MySQL, Java,
+                    and other technologies I am skilled in the use of these
+                    technologies and have worked with different NPM modules to
+                    build web applications based on single-page application
+                    (SPA) architectures. Apart from these technologies, I have
+                    also worked on various projects involving SAP ABAP, Report &
                     Dialogue Program, Modularization, Enhancement, BAdI, ALVs,
                     function modules, and so on. I love the logic and structure
                     of coding and strive to write elegant, efficient code.
