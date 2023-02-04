@@ -55,7 +55,7 @@ export const ProjectList = [
                   ability to edit, delete, and upload the place if they have
                   logged into the application.`,
     image: blog,
-    live: "https://blogapp-27364.web.app/",
+    live: "https://blogappv1.netlify.app/",
     tech: ["Node.js", "React.js", "MongoDB", "Rest API", "Chakra UI"],
   },
   {
