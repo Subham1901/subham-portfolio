@@ -1,9 +1,10 @@
 import React from "react";
-import movie from "./movieworld.png";
-import blog from "./blogapp.png";
-import coin from "./Coin.png";
-import news from "./news.png";
+import movie from "./assets/movieworld.png";
+import blog from "./assets/blogapp.png";
+import coin from "./assets/Coin.png";
+import news from "./assets/news.png";
 import memories from "./assets/memories.png";
+import share from "./assets/easyshare.png";
 import { HStack, Tag } from "@chakra-ui/react";
 
 function Content() {
@@ -18,7 +19,53 @@ function Content() {
             <div class="xl:w-1/4 md:w-1/2 p-4 ">
               <div class="bg-gray-100 p-6 rounded-lg h-[30rem]">
                 <a
-                  href="https://memories-webv1.netlify.app/"
+                  href="https://sharefilev1.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="h-40 rounded w-full object-cover object-center mb-6"
+                    src={share}
+                    alt="news"
+                  />
+                </a>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Easy Share
+                </h2>
+                <p class="leading-relaxed text-base">
+                  A online application that can generate a link to download any
+                  file uploaded up to 1000MB in size also has the ability to
+                  distribute the file via email by providing the recipient and
+                  sender email addresses.
+                </p>
+                <HStack
+                  display={"flex"}
+                  justifyContent="flex-start"
+                  mt={2}
+                  flexWrap="wrap"
+                >
+                  <Tag m={1} color={"white"} bgColor={"linkedin.600"}>
+                    Node.js
+                  </Tag>{" "}
+                  <Tag color={"white"} bgColor={"linkedin.600"}>
+                    React.js
+                  </Tag>{" "}
+                  <Tag color={"white"} bgColor={"linkedin.600"}>
+                    MongoDB
+                  </Tag>
+                  <Tag color={"white"} bgColor={"linkedin.600"}>
+                    Redux
+                  </Tag>
+                  <Tag color={"white"} bgColor={"linkedin.600"}>
+                    Redux Thunk
+                  </Tag>
+                </HStack>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4 ">
+              <div class="bg-gray-100 p-6 rounded-lg h-[30rem]">
+                <a
+                  href="https://memories-6cpv.onrender.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -52,9 +99,6 @@ function Content() {
                   </Tag>
                   <Tag color={"white"} bgColor={"linkedin.600"}>
                     Redux
-                  </Tag>
-                  <Tag color={"white"} bgColor={"linkedin.600"}>
-                    Mongoose
                   </Tag>
                   <Tag color={"white"} bgColor={"linkedin.600"}>
                     Google OAuth
