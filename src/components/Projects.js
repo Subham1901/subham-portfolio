@@ -46,9 +46,10 @@ export default function Projects() {
               <HStack display={"flex"} justifyContent="center" flexWrap="wrap">
                 {project.tech.map((tech) => (
                   <Tag
-                    color={"gray.600"}
+                    color={"white"}
+                    fontWeight="semibold"
                     m={"3px !important"}
-                    bgColor={"blue.200"}
+                    bgColor={"linkedin.700"}
                     p={1}
                   >
                     {tech}

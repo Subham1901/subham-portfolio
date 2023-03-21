@@ -5,7 +5,16 @@ import coin from "./assets/Coin.png";
 import news from "./assets/news.png";
 import memories from "./assets/memories.png";
 import share from "./assets/easyshare.png";
+import food from "./assets/food247.png";
 export const ProjectList = [
+  {
+    name: "Food247",
+    description: `Applications for online food ordering like Swiggy, which utilizes the Swiggy API to find restaurants close to the user.`,
+    image: food,
+    live: "https://bucolic-klepon-600196.netlify.app/",
+    tech: ["React.js", "Parcel", "Redux", "Chkara UI"],
+  },
+
   {
     name: "Easy Share",
     description: `A online application that can generate a link to download any
