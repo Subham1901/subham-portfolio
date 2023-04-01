@@ -9,10 +9,17 @@ import food from "./assets/food247.png";
 export const ProjectList = [
   {
     name: "Food247",
-    description: `Applications for online food ordering like Swiggy, which utilizes the Swiggy API to find restaurants close to the user.`,
+    description: `An online food application, where users can browse any restaurant and add items to their cart.`,
     image: food,
-    live: "https://bucolic-klepon-600196.netlify.app/",
-    tech: ["React.js", "Parcel", "Redux", "Chkara UI"],
+    live: "https://247food.netlify.app/",
+    tech: [
+      "React.js",
+      "Parcel",
+      "Redux",
+      "Redux ToolKit",
+      "Node.js",
+      "Chkara UI",
+    ],
   },
 
   {
