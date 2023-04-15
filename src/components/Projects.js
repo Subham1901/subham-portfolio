@@ -61,7 +61,11 @@ const Projects = () => {
                   >
                     {data.description}
                   </Text>
-                  <Link>
+                  <Link
+                    href={data.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button
                       className="preview-button"
                       p={1}
@@ -71,7 +75,11 @@ const Projects = () => {
                       <ImLink size={25} className="preview-icon" />
                     </Button>
                   </Link>
-                  <Link>
+                  <Link
+                    href={data.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button
                       p={1}
                       className="preview-button"
@@ -85,12 +93,34 @@ const Projects = () => {
               </Box>
               <Box
                 display={"flex"}
+                flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                {data.tech.map((data) => (
-                  <Avatar size={"sm"} m={2} src={data} />
-                ))}
+                <Box
+                  display={"flex"}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                >
+                  <Heading
+                    p={2}
+                    fontSize={"lg"}
+                    color={"brand.primary"}
+                    fontWeight={"extrabold"}
+                    fontFamily={"font"}
+                  >
+                    {data.name}
+                  </Heading>
+                </Box>
+                <Box
+                  display={"flex"}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                >
+                  {data.tech.map((data) => (
+                    <Avatar size={"sm"} m={2} src={data} />
+                  ))}
+                </Box>
               </Box>
             </Box>
           </Pulse>

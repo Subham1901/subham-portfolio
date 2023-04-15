@@ -43,7 +43,7 @@ const MainContent = () => {
           <Heading
             mt={2}
             fontWeight={"extrabold"}
-            fontSize={["3xl", "40px", "6xl"]}
+            fontSize={["3xl", "40px", "5xl"]}
             fontFamily={"font"}
             color={"brand.secondary"}
           >
@@ -52,7 +52,7 @@ const MainContent = () => {
           <Heading
             textAlign={"center"}
             fontWeight={"extrabold"}
-            fontSize={["3xl", , "40px", "6xl"]}
+            fontSize={["3xl", , "40px", "5xl"]}
             fontFamily={"font"}
             color={"brand.secondary"}
           >

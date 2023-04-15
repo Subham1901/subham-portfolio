@@ -47,6 +47,7 @@ export const ProjectList = [
     image: food,
     live: "https://247food.netlify.app/",
     tech: [react, node, express, redux, mongo, chakra],
+    repo: "https://github.com/Subham1901/namaste_react_code/tree/master/Chapter-4%20coding",
   },
 
   {
@@ -58,6 +59,7 @@ export const ProjectList = [
     image: share,
     live: "https://sharefilev1.netlify.app/",
     tech: [react, node, express, redux, mongo, chakra],
+    repo: "https://github.com/Subham1901/Easy-File-Sharing",
   },
   {
     name: "Memories",
@@ -66,6 +68,7 @@ export const ProjectList = [
     image: memories,
     live: "https://memories-6cpv.onrender.com/",
     tech: [react, node, express, redux, mongo, chakra],
+    repo: "https://github.com/Subham1901/memories_app_frontend",
   },
   {
     name: "Movies World",
@@ -74,6 +77,7 @@ export const ProjectList = [
     image: movie,
     live: "https://movie-application-z1lw.onrender.com/",
     tech: [react, chakra],
+    repo: "https://github.com/Subham1901/Movie-Application",
   },
   {
     name: "Blog Application",
@@ -83,6 +87,7 @@ export const ProjectList = [
                   logged into the application.`,
     image: blog,
     live: "https://blogappv1.netlify.app/",
+    repo: "https://github.com/Subham1901/Blog-Application",
     tech: [react, node, mongo, express, chakra],
   },
   {
@@ -94,6 +99,7 @@ export const ProjectList = [
     image: coin,
     live: "https://cryptoapplication.onrender.com/",
     tech: [react, chakra],
+    repo: "https://github.com/Subham1901/CryptoApplication",
   },
 ];
 

@@ -13,6 +13,7 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
+import { TbSend } from "react-icons/tb";
 import { emailKey, emailService, emailTemp } from "../utils/helper";
 import gif from "../assets/sending.gif";
 const Contact = () => {
@@ -27,8 +28,8 @@ const Contact = () => {
     email: email,
     message: message,
   };
-
-  const sendMail = (e) => {
+  console.log(templateParams);
+  function sendMail(e) {
     e.preventDefault();
     setLoading(true);
     if (!name || !email || !message) {
@@ -55,6 +56,9 @@ const Contact = () => {
             description: "Email sent successfully",
           });
         }
+        setEMail("");
+        setName("");
+        setMessage("");
       },
       (error) => {
         setLoading(false);
@@ -64,7 +68,7 @@ const Contact = () => {
         });
       }
     );
-  };
+  }
   return (
     <Container p={5} bgColor={"brand.primary"} mt={10} maxW={"100%"}>
       <Container maxW={"container.lg"}>
@@ -102,8 +106,11 @@ const Contact = () => {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <form>
+            <form onSubmit={(e) => sendMail(e)}>
               <Input
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                name="name"
                 type="text"
                 required
                 className="input-area"
@@ -111,6 +118,9 @@ const Contact = () => {
                 placeholder="Enter Name"
               />
               <Input
+                onChange={(e) => setEMail(e.target.value)}
+                value={email}
+                name="email"
                 required
                 type="email"
                 className="input-area"
@@ -118,6 +128,9 @@ const Contact = () => {
                 placeholder="Enter Email"
               />
               <Textarea
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+                name="message"
                 type="text"
                 required
                 className="input-area"
@@ -126,9 +139,14 @@ const Contact = () => {
               />
               <Button
                 ml={8}
+                isLoading={loading}
+                colorScheme="blue"
+                letterSpacing={"5px"}
+                loadingText="Sending..."
                 className="contact-button"
                 type="submit"
                 w={["xs", "sm", "md"]}
+                leftIcon={<TbSend />}
               >
                 Send
               </Button>
