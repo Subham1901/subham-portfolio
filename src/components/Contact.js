@@ -70,7 +70,13 @@ const Contact = () => {
     );
   }
   return (
-    <Container p={5} bgColor={"brand.primary"} mt={10} maxW={"100%"}>
+    <Container
+      id="contact"
+      p={5}
+      bgColor={"brand.primary"}
+      mt={10}
+      maxW={"100%"}
+    >
       <Container maxW={"container.lg"}>
         <Heading
           p={5}

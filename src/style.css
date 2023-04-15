@@ -1,5 +1,7 @@
 * {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 span {
   letter-spacing: 2px !important;
@@ -83,4 +85,23 @@ span {
 
 .contact-button {
   background-color: #43bee5 !important;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100% !important;
+  z-index: 10;
+  background: #161b40;
+  transition: transform 9s ease-in-out;
+}
+.header .header-hidden {
+  transform: translateY(-100%);
+}
+.drawer-button {
+  background: #161b40 !important;
+  color: #43bee5;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

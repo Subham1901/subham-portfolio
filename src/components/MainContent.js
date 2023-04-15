@@ -62,7 +62,7 @@ const MainContent = () => {
           <Text
             pt={4}
             pb={2}
-            fontSize={"xl"}
+            fontSize={["md", "xl"]}
             letterSpacing={"1px"}
             textAlign={"center"}
             fontFamily={"font"}
@@ -77,6 +77,7 @@ const MainContent = () => {
           </Text>
           <form method="get" action={resume}>
             <Button
+              fontFamily={"font"}
               css={{
                 "&:hover": {
                   backgroundColor: "#ffae19",

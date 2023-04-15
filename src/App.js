@@ -1,16 +1,19 @@
 import Contact from "./components/Contact";
 import Header from "./components/Header";
+import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import "./style.css";
+
 function App() {
   return (
-    <div className="App">
+    <>
+      <Nav />
       <Header />
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }
 

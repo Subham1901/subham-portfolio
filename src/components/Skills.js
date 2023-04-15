@@ -7,6 +7,7 @@ import {
   Stack,
   Text,
   VStack,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
 import react from "../assets/react.webp";
@@ -26,7 +27,7 @@ import firebase from "../assets/firebase.webp";
 import Swing from "react-reveal/Swing";
 const Skills = () => {
   return (
-    <Container p={2} maxW={"100%"} bgColor={"brand.skill"}>
+    <Container id="skill" p={2} maxW={"100%"} bgColor={"brand.skill"}>
       <Heading
         p={5}
         textAlign={"center"}

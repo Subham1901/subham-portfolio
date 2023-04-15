@@ -16,7 +16,7 @@ import Pulse from "react-reveal/Pulse";
 import { ImGithub, ImLink } from "react-icons/im";
 const Projects = () => {
   return (
-    <Container p={2} maxW={"100%"} bgColor={"brand.skill"}>
+    <Container id="projects" p={2} maxW={"100%"} bgColor={"brand.skill"}>
       <Heading
         p={5}
         textAlign={"center"}
