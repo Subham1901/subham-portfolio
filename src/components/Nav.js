@@ -51,16 +51,12 @@ const Nav = () => {
     };
   }, [showNavbar, scrollPosition]);
 
-  if (!showNavbar) {
-    return;
-  }
-
   return (
     <>
       <Box
-        className={showNavbar ? "header" : "header-hidden"}
+        className="header"
         p={4}
-        shadow={!showNavbar ? "lg" : "none"}
+        shadow={!showNavbar ? "2xl" : "none"}
         display={"flex"}
         justifyContent={"space-between"}
         alignItems={"center"}
@@ -141,7 +137,7 @@ const Nav = () => {
                 </a>
               </Box>
             </DrawerBody>
-
+            <DrawerCloseButton />
             <DrawerFooter />
             <Social />
           </DrawerContent>

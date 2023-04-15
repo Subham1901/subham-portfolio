@@ -1,3 +1,4 @@
+import { Container } from "@chakra-ui/react";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
