@@ -104,7 +104,7 @@ const Projects = () => {
                 >
                   <Heading
                     p={2}
-                    fontSize={"lg"}
+                    fontSize={["lg", "2xl"]}
                     color={"brand.primary"}
                     fontWeight={"extrabold"}
                     fontFamily={"font"}
