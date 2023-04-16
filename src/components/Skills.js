@@ -43,7 +43,7 @@ const Skills = () => {
             p={2}
             borderRadius={"md"}
             shadow={"sm"}
-            w={["xs", "2xl"]}
+            w={["xs", "xs", "md", "2xl"]}
             display={"flex"}
             flexWrap="wrap"
             flexDirection="row"

@@ -141,7 +141,7 @@ const Contact = () => {
                 required
                 className="input-area"
                 w={["xs", "sm", "md"]}
-                placeholder="Enter Name"
+                placeholder="Enter Message"
               />
               <Button
                 ml={8}
