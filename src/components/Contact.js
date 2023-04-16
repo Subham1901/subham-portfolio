@@ -16,7 +16,6 @@ import {
 import { TbSend } from "react-icons/tb";
 import { emailKey, emailService, emailTemp } from "../utils/helper";
 import gif from "../assets/sending.gif";
-import { HashScroll } from "react-hash-scroll";
 const Contact = () => {
   const toast = useToast();
   const [name, setName] = useState("");
@@ -71,99 +70,97 @@ const Contact = () => {
     );
   }
   return (
-    <HashScroll hash="#hash-contact">
-      <Container
-        id="contact"
-        p={5}
-        bgColor={"brand.primary"}
-        mt={10}
-        maxW={"100%"}
-      >
-        <Container maxW={"container.lg"}>
-          <Heading
-            p={5}
-            textAlign={"center"}
-            fontFamily={"font"}
-            fontWeight={"extrabold"}
-            color={"brand.secondary"}
-          >
-            Connect with me!
-          </Heading>
-          <HStack
+    <Container
+      id="contact"
+      p={5}
+      bgColor={"brand.primary"}
+      mt={10}
+      maxW={"100%"}
+    >
+      <Container maxW={"container.lg"}>
+        <Heading
+          p={5}
+          textAlign={"center"}
+          fontFamily={"font"}
+          fontWeight={"extrabold"}
+          color={"brand.secondary"}
+        >
+          Connect with me!
+        </Heading>
+        <HStack
+          display={"flex"}
+          flexDirection={["column", "column", "column", "row", "row"]}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+        >
+          <Box p={5}>
+            <Text
+              color={"brand.outline"}
+              textAlign={"center"}
+              fontSize={"xl"}
+              fontFamily={"font"}
+              fontWeight={"medium"}
+            >
+              If you're seeking someone who can build reliable, fast, and modern
+              web applications, get in touch with me!
+            </Text>
+            <Img w={"xs"} objectFit={"cover"} h={"250px"} src={gif} />
+          </Box>
+          <Box
             display={"flex"}
-            flexDirection={["column", "column", "column", "row", "row"]}
-            justifyContent={"space-between"}
+            flexDirection={"column"}
+            justifyContent={"center"}
             alignItems={"center"}
           >
-            <Box p={5}>
-              <Text
-                color={"brand.outline"}
-                textAlign={"center"}
-                fontSize={"xl"}
-                fontFamily={"font"}
-                fontWeight={"medium"}
+            <form onSubmit={(e) => sendMail(e)}>
+              <Input
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                name="name"
+                type="text"
+                required
+                className="input-area"
+                w={["xs", "sm", "md"]}
+                placeholder="Enter Name"
+              />
+              <Input
+                onChange={(e) => setEMail(e.target.value)}
+                value={email}
+                name="email"
+                required
+                type="email"
+                className="input-area"
+                w={["xs", "sm", "md"]}
+                placeholder="Enter Email"
+              />
+              <Textarea
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+                name="message"
+                type="text"
+                required
+                className="input-area"
+                w={["xs", "sm", "md"]}
+                placeholder="Enter Message"
+              />
+              <Button
+                ml={8}
+                isLoading={loading}
+                colorScheme="blue"
+                letterSpacing={"5px"}
+                loadingText="Sending..."
+                className="contact-button"
+                type="submit"
+                w={["xs", "sm", "md"]}
+                leftIcon={<TbSend />}
               >
-                If you're seeking someone who can build reliable, fast, and
-                modern web applications, get in touch with me!
-              </Text>
-              <Img w={"xs"} objectFit={"cover"} h={"250px"} src={gif} />
-            </Box>
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <form onSubmit={(e) => sendMail(e)}>
-                <Input
-                  onChange={(e) => setName(e.target.value)}
-                  value={name}
-                  name="name"
-                  type="text"
-                  required
-                  className="input-area"
-                  w={["xs", "sm", "md"]}
-                  placeholder="Enter Name"
-                />
-                <Input
-                  onChange={(e) => setEMail(e.target.value)}
-                  value={email}
-                  name="email"
-                  required
-                  type="email"
-                  className="input-area"
-                  w={["xs", "sm", "md"]}
-                  placeholder="Enter Email"
-                />
-                <Textarea
-                  onChange={(e) => setMessage(e.target.value)}
-                  value={message}
-                  name="message"
-                  type="text"
-                  required
-                  className="input-area"
-                  w={["xs", "sm", "md"]}
-                  placeholder="Enter Message"
-                />
-                <Button
-                  ml={8}
-                  isLoading={loading}
-                  colorScheme="blue"
-                  letterSpacing={"5px"}
-                  loadingText="Sending..."
-                  className="contact-button"
-                  type="submit"
-                  w={["xs", "sm", "md"]}
-                  leftIcon={<TbSend />}
-                >
-                  Send
-                </Button>
-              </form>
-            </Box>
-          </HStack>
-        </Container>
+                Send
+              </Button>
+            </form>
+          </Box>
+        </HStack>
       </Container>
-    </HashScroll>
+    </Container>
   );
 };
 

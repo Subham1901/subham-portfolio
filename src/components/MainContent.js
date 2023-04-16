@@ -19,6 +19,7 @@ import Skills from "./Skills";
 const MainContent = () => {
   return (
     <Container
+      p={5}
       mt={10}
       display={"flex"}
       flexDirection={"column"}
@@ -43,7 +44,7 @@ const MainContent = () => {
           <Heading
             mt={2}
             fontWeight={"extrabold"}
-            fontSize={["3xl", "40px", "6xl"]}
+            fontSize={["3xl", "40px", "5xl"]}
             fontFamily={"font"}
             color={"brand.secondary"}
           >
@@ -52,7 +53,7 @@ const MainContent = () => {
           <Heading
             textAlign={"center"}
             fontWeight={"extrabold"}
-            fontSize={["3xl", , "40px", "6xl"]}
+            fontSize={["3xl", , "40px", "5xl"]}
             fontFamily={"font"}
             color={"brand.secondary"}
           >
@@ -62,7 +63,7 @@ const MainContent = () => {
           <Text
             pt={4}
             pb={2}
-            fontSize={["md", "xl"]}
+            fontSize={["md", "lg"]}
             letterSpacing={"1px"}
             textAlign={"center"}
             fontFamily={"font"}
