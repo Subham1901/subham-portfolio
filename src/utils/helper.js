@@ -4,21 +4,12 @@ import "@fontsource/catamaran";
 import react from "../assets/react.webp";
 import node from "../assets/nodejs.webp";
 import mongo from "../assets/mongo.webp";
-import api from "../assets/api.webp";
-import git from "../assets/git.webp";
 import express from "../assets/express.webp";
 import redux from "../assets/redux.webp";
-import java from "../assets/java.webp";
 import chakra from "../assets/chakra.webp";
-import html from "../assets/html.webp";
-import js from "../assets/Javascript.webp";
-import css from "../assets/css.webp";
-import sql from "../assets/mysql.webp";
-import firebase from "../assets/firebase.webp";
 import movie from "../assets/movieworld.webp";
 import blog from "../assets/blog.webp";
 import coin from "../assets/Coin.webp";
-import news from "../assets/news.webp";
 import memories from "../assets/memories.png";
 import share from "../assets/share.png";
 import food from "../assets/food247.webp";
@@ -63,7 +54,7 @@ export const ProjectList = [
   },
   {
     name: "Memories",
-    description: `A web-based application that allows users to create, update
+    description: `A web-based application that allows you to create, update
                   and delete operations and authentications with google OAuth.`,
     image: memories,
     live: "https://memories-6cpv.onrender.com/",
@@ -72,8 +63,7 @@ export const ProjectList = [
   },
   {
     name: "Movies World",
-    description: `Movie application where users can search any movie and see the
-                  details of the particular movie that was being searched.`,
+    description: `movie search engine where you may look for any movie and read details about the movie you were looking for.`,
     image: movie,
     live: "https://movie-application-z1lw.onrender.com/",
     tech: [react, chakra],
@@ -81,10 +71,7 @@ export const ProjectList = [
   },
   {
     name: "Blog Application",
-    description: `A web app where users can add famous places, and the user can
-                  see places that other users have added. The user has the
-                  ability to edit, delete, and upload the place if they have
-                  logged into the application.`,
+    description: `an online application where you may add popular places and view places that other users have added. The places can be updated, deleted, and uploaded if you are logged into the application.`,
     image: blog,
     live: "https://blogappv1.netlify.app/",
     repo: "https://github.com/Subham1901/Blog-Application",
@@ -92,10 +79,8 @@ export const ProjectList = [
   },
   {
     name: "Crypto Stack",
-    description: `Crypto application, where users can see the number of
-                  cryptocurrencies (ex: Bitcoin, Ethereum, Dogecoin, etc.).
-                  Also, the user can see the market data based on the currency
-                  selected by the user.`,
+    description: `a crypto application where you can view various cryptocurrencies (such as Bitcoin, Ethereum, Dogecoin, etc.).
+You can also browse market information based on a particular currency.`,
     image: coin,
     live: "https://cryptoapplication.onrender.com/",
     tech: [react, chakra],
