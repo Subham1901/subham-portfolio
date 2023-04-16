@@ -106,3 +106,10 @@ span {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.drawer-footer-text {
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 2px;
+}

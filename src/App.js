@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import "./style.css";
 
-function App() {
+const AppLayout = () => {
   return (
     <>
       <Nav />
@@ -16,6 +16,10 @@ function App() {
       <Contact />
     </>
   );
+};
+
+function App() {
+  return <AppLayout />;
 }
 
 export default App;

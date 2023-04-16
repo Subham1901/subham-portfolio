@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Heading,
-  Link,
   useDisclosure,
   Drawer,
   DrawerBody,
@@ -13,10 +12,14 @@ import {
   DrawerContent,
   DrawerCloseButton,
   VStack,
+  Text,
 } from "@chakra-ui/react";
 
 import { MdMenuOpen } from "react-icons/md";
+import { BrowserRouter } from "react-router-dom";
+import { HashLink, HashLink as Link } from "react-router-hash-link";
 import Social from "./Social";
+
 const Nav = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -52,98 +55,105 @@ const Nav = () => {
   }, [showNavbar, scrollPosition]);
 
   return (
-    <>
-      <Box
-        className="header"
-        p={4}
-        shadow={!showNavbar ? "2xl" : "none"}
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-      >
-        <Link href="#/">
-          <Heading
-            cursor={"pointer"}
-            fontSize={["20px", "25px", , "2xl"]}
-            textTransform={"uppercase"}
-            letterSpacing={"3px"}
-            fontFamily={"font"}
-            color={"brand.secondary"}
-          >
-            {"<subham />"}
-          </Heading>
-        </Link>
-        <Button
-          onClick={onOpen}
-          p={0}
-          bgColor={"brand.secondary"}
-          borderRadius={"full"}
+    <Box
+      className="header"
+      p={4}
+      shadow={!showNavbar ? "2xl" : "none"}
+      display={"flex"}
+      justifyContent={"space-between"}
+      alignItems={"center"}
+    >
+      <Link to="#/">
+        <Heading
+          cursor={"pointer"}
+          fontSize={["20px", "25px", , "2xl"]}
+          textTransform={"uppercase"}
+          letterSpacing={"3px"}
+          fontFamily={"font"}
+          color={"brand.secondary"}
         >
-          <MdMenuOpen size={30} />
-        </Button>
-        <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
-          <DrawerContent>
-            <a href="#/">
-              <Heading
-                p={5}
-                textAlign={"center"}
-                cursor={"pointer"}
-                fontSize={["20px", "25px", , "2xl"]}
-                textTransform={"uppercase"}
-                letterSpacing={"3px"}
-                fontFamily={"font"}
-                color={"brand.secondary"}
-              >
-                {"<subham />"}
-              </Heading>
-            </a>
-            <DrawerBody>
-              <Box w={"full"}>
-                <a href="#/">
-                  <Button
-                    fontFamily={"font"}
-                    className="drawer-button"
-                    w={"full"}
-                  >
-                    Home
-                  </Button>
-                </a>
-                <a href="#skill">
-                  <Button
-                    fontFamily={"font"}
-                    className="drawer-button"
-                    w={"full"}
-                  >
-                    Skills
-                  </Button>
-                </a>
-                <a href="#projects">
-                  <Button
-                    fontFamily={"font"}
-                    className="drawer-button"
-                    w={"full"}
-                  >
-                    Projects
-                  </Button>
-                </a>
-                <a href="#contact">
-                  <Button
-                    fontFamily={"font"}
-                    className="drawer-button"
-                    w={"full"}
-                  >
-                    Contact
-                  </Button>
-                </a>
-              </Box>
-            </DrawerBody>
-            <DrawerCloseButton />
-            <DrawerFooter />
+          {"<subham />"}
+        </Heading>
+      </Link>
+      <Button
+        onClick={onOpen}
+        p={0}
+        bgColor={"brand.secondary"}
+        borderRadius={"full"}
+      >
+        <MdMenuOpen size={30} />
+      </Button>
+      <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
+        <DrawerContent>
+          <HashLink to={"/#"}>
+            <Heading
+              p={5}
+              textAlign={"center"}
+              cursor={"pointer"}
+              fontSize={["20px", "25px", , "2xl"]}
+              textTransform={"uppercase"}
+              letterSpacing={"3px"}
+              fontFamily={"font"}
+              color={"brand.secondary"}
+            >
+              {"<subham />"}
+            </Heading>
+          </HashLink>
+
+          <DrawerBody>
+            <Box w={"full"}>
+              <Link smooth to="/#">
+                <Button
+                  fontFamily={"font"}
+                  className="drawer-button"
+                  w={"full"}
+                >
+                  Home
+                </Button>
+              </Link>
+              <Link smooth to="/hash-scroll#hash-skill">
+                <Button
+                  fontFamily={"font"}
+                  className="drawer-button"
+                  w={"full"}
+                >
+                  Skills
+                </Button>
+              </Link>
+              <Link smooth to="/hash-scroll#hash-project">
+                <Button
+                  fontFamily={"font"}
+                  className="drawer-button"
+                  w={"full"}
+                >
+                  Projects
+                </Button>
+              </Link>
+              <Link smooth to="/hash-scroll#hash-contact">
+                <Button
+                  fontFamily={"font"}
+                  className="drawer-button"
+                  w={"full"}
+                >
+                  Contact
+                </Button>
+              </Link>
+            </Box>
+          </DrawerBody>
+          <DrawerCloseButton />
+          <Text
+            textAlign={"center"}
+            className="drawer-footer-text"
+            fontFamily="font"
+          >
+            Let's Connect
+          </Text>
+          <DrawerFooter>
             <Social />
-          </DrawerContent>
-        </Drawer>
-      </Box>
-    </>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </Box>
   );
 };
 
