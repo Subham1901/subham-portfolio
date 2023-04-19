@@ -7,7 +7,7 @@ const Header = () => {
     <Container
       id="/"
       p={5}
-      h={"50rem"}
+      h={"60rem"}
       bgColor={"brand.primary"}
       shadow={" 0 3px 100px rgb(245 245 220 / 0.2"}
       maxW={"fit-content"}
