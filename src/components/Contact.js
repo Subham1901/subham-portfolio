@@ -93,7 +93,13 @@ const Contact = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <Box p={5}>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            p={5}
+          >
             <Text
               color={"brand.outline"}
               textAlign={"center"}
