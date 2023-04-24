@@ -38,126 +38,149 @@ const Skills = () => {
         Skills & Experience
       </Heading>
       <Stack justifyContent={"center"} display={"flex"} alignItems={"center"}>
-        <Swing>
-          <Box
-            p={2}
-            borderRadius={"md"}
-            shadow={"sm"}
-            w={["xs", "xs", "md", "2xl"]}
-            display={"flex"}
-            flexWrap="wrap"
-            flexDirection="row"
-            justifyContent="center"
-            alignItems={"center"}
-          >
+        <Box
+          p={2}
+          borderRadius={"md"}
+          shadow={"sm"}
+          w={["xs", "xs", "md", "2xl"]}
+          display={"flex"}
+          flexWrap="wrap"
+          flexDirection="row"
+          justifyContent="center"
+          alignItems={"center"}
+        >
+          <Swing>
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={node}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={"80px"}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={express}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={react}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={redux}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={mongo}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={js}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               m={3}
               size={["md", "xl"]}
               name="node"
               src={git}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={chakra}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={java}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={api}
             />
-
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={sql}
             />
+          </Swing>
+          <Swing>
+            {" "}
             <Img
               m={3}
-              w={["50px", "80px"]}
+              w={["40px", "80px"]}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={firebase}
             />
-          </Box>
-        </Swing>
+          </Swing>
+        </Box>
       </Stack>
     </Container>
   );
