@@ -77,23 +77,24 @@ const Contact = () => {
       mt={10}
       maxW={"100%"}
     >
-      <Container maxW={"container.lg"}>
-        <Heading
-          p={5}
-          textAlign={"center"}
-          fontFamily={"font"}
-          fontWeight={"extrabold"}
-          color={"brand.secondary"}
-        >
-          Connect with me!
-        </Heading>
+      <Heading
+        p={5}
+        textAlign={"center"}
+        fontFamily={"font"}
+        fontWeight={"extrabold"}
+        color={"brand.secondary"}
+      >
+        Connect with me!
+      </Heading>
+      <Container maxW={"container.xl"}>
         <HStack
           display={"flex"}
           flexDirection={["column", "column", "column", "row", "row"]}
-          justifyContent={"space-between"}
+          justifyContent={["center", "center", "center", "space-between"]}
           alignItems={"center"}
         >
           <Box
+            w={["xs", "sm", "lg", "2xl"]}
             display={"flex"}
             flexDirection={"column"}
             justifyContent={"center"}
@@ -103,7 +104,7 @@ const Contact = () => {
             <Text
               color={"brand.outline"}
               textAlign={"center"}
-              fontSize={"xl"}
+              fontSize={["md", "lg"]}
               fontFamily={"font"}
               fontWeight={"medium"}
             >
@@ -113,6 +114,8 @@ const Contact = () => {
             <Img w={"xs"} objectFit={"cover"} h={"250px"} src={gif} />
           </Box>
           <Box
+            p={2}
+            overflow={"hidden"}
             display={"flex"}
             flexDirection={"column"}
             justifyContent={"center"}
@@ -126,7 +129,7 @@ const Contact = () => {
                 type="text"
                 required
                 className="input-area"
-                w={["xs", "sm", "md"]}
+                width={[290, 400]}
                 placeholder="Enter Name"
               />
               <Input
@@ -136,7 +139,7 @@ const Contact = () => {
                 required
                 type="email"
                 className="input-area"
-                w={["xs", "sm", "md"]}
+                width={[290, 400]}
                 placeholder="Enter Email"
               />
               <Textarea
@@ -146,7 +149,7 @@ const Contact = () => {
                 type="text"
                 required
                 className="input-area"
-                w={["xs", "sm", "md"]}
+                width={[290, 400]}
                 placeholder="Enter Message"
               />
               <Button
@@ -157,7 +160,7 @@ const Contact = () => {
                 loadingText="Sending..."
                 className="contact-button"
                 type="submit"
-                w={["xs", "sm", "md"]}
+                width={[290, 400]}
                 leftIcon={<TbSend />}
               >
                 Send

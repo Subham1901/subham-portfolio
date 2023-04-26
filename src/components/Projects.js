@@ -36,6 +36,7 @@ const Projects = () => {
         {ProjectList.map((data, idx) => (
           <Pulse key={idx}>
             <Box
+              w={["xs", "sm"]}
               border={"1px solid #e9ecef"}
               borderRadius={"md"}
               className="card"

@@ -7,17 +7,12 @@ import {
   Drawer,
   DrawerBody,
   DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  VStack,
   Text,
 } from "@chakra-ui/react";
-
 import { MdMenuOpen } from "react-icons/md";
-import { BrowserRouter } from "react-router-dom";
-import { HashLink, HashLink as Link } from "react-router-hash-link";
 import Social from "./Social";
 
 const Nav = () => {
@@ -63,7 +58,7 @@ const Nav = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
     >
-      <Link to="#/">
+      <a href="/#">
         <Heading
           cursor={"pointer"}
           fontSize={["20px", "25px", , "2xl"]}
@@ -74,7 +69,7 @@ const Nav = () => {
         >
           {"<subham />"}
         </Heading>
-      </Link>
+      </a>
       <Button
         onClick={onOpen}
         p={0}
@@ -85,7 +80,7 @@ const Nav = () => {
       </Button>
       <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
         <DrawerContent>
-          <HashLink to={"/#"}>
+          <a href={"/#"}>
             <Heading
               p={5}
               textAlign={"center"}
@@ -98,11 +93,11 @@ const Nav = () => {
             >
               {"<subham />"}
             </Heading>
-          </HashLink>
+          </a>
 
           <DrawerBody>
             <Box w={"full"}>
-              <Link smooth to="/#">
+              <a href="/#">
                 <Button
                   fontFamily={"font"}
                   className="drawer-button"
@@ -110,8 +105,8 @@ const Nav = () => {
                 >
                   Home
                 </Button>
-              </Link>
-              <Link smooth to="/hash-scroll#hash-skill">
+              </a>
+              <a href="#skill">
                 <Button
                   fontFamily={"font"}
                   className="drawer-button"
@@ -119,8 +114,8 @@ const Nav = () => {
                 >
                   Skills
                 </Button>
-              </Link>
-              <Link smooth to="/hash-scroll#hash-project">
+              </a>
+              <a href="#projects">
                 <Button
                   fontFamily={"font"}
                   className="drawer-button"
@@ -128,8 +123,8 @@ const Nav = () => {
                 >
                   Projects
                 </Button>
-              </Link>
-              <Link smooth to="/hash-scroll#hash-contact">
+              </a>
+              <a href="#contact">
                 <Button
                   fontFamily={"font"}
                   className="drawer-button"
@@ -137,7 +132,7 @@ const Nav = () => {
                 >
                   Contact
                 </Button>
-              </Link>
+              </a>
             </Box>
           </DrawerBody>
           <DrawerCloseButton />
