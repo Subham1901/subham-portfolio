@@ -20,7 +20,7 @@ const MainContent = () => {
   return (
     <Container
       p={5}
-      mt={10}
+      mt={2}
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}

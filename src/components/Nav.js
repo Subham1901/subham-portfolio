@@ -58,7 +58,7 @@ const Nav = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
     >
-      <a href="/#">
+      <a href="#home">
         <Heading
           cursor={"pointer"}
           fontSize={["20px", "25px", , "2xl"]}
@@ -80,7 +80,7 @@ const Nav = () => {
       </Button>
       <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
         <DrawerContent>
-          <a href={"/#"}>
+          <a href={"#home"}>
             <Heading
               p={5}
               textAlign={"center"}
@@ -97,7 +97,7 @@ const Nav = () => {
 
           <DrawerBody>
             <Box w={"full"}>
-              <a href="/#">
+              <a href="#home">
                 <Button
                   fontFamily={"font"}
                   className="drawer-button"

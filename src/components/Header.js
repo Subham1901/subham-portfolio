@@ -5,9 +5,9 @@ import MainContent from "./MainContent";
 const Header = () => {
   return (
     <Container
-      id="/"
-      p={5}
-      h={"60rem"}
+      id="home"
+      p={3}
+      h={"55rem"}
       bgColor={"brand.primary"}
       shadow={" 0 3px 100px rgb(245 245 220 / 0.2"}
       maxW={"fit-content"}

@@ -9,13 +9,17 @@ import {
   Heading,
   Img,
   Input,
+  Stack,
   Text,
   Textarea,
   useToast,
 } from "@chakra-ui/react";
 import { TbSend } from "react-icons/tb";
 import { emailKey, emailService, emailTemp } from "../utils/helper";
+import { GrMail } from "react-icons/gr";
+import { AiFillPhone } from "react-icons/ai";
 import gif from "../assets/sending.gif";
+import { Link } from "react-router-dom";
 const Contact = () => {
   const toast = useToast();
   const [name, setName] = useState("");
@@ -168,6 +172,36 @@ const Contact = () => {
             </form>
           </Box>
         </HStack>
+        <Box
+          display={"flex"}
+          alignItems={"center"}
+          mt={10}
+          justifyContent={"center"}
+          color={"brand.outline"}
+        >
+          <HStack
+            display={"flex"}
+            alignItems={["flex-start", "flex-start", "center"]}
+            flexDirection={["column", "column", "row", "row"]}
+          >
+            <Text p={4} color={"brand.ylw"}>
+              <GrMail color="#ADE8F4" />
+              <Link
+                onClick={(e) => {
+                  window.location.href = "mailto:me.subham01@gmail.com";
+                  e.preventDefault();
+                }}
+              >
+                me.subham01@gmail.com
+              </Link>
+            </Text>
+
+            <Text p={2} color={"brand.ylw"}>
+              <AiFillPhone color="#ADE8F4" />
+              +91-9556045958
+            </Text>
+          </HStack>
+        </Box>
       </Container>
     </Container>
   );
