@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/subham-portfolio/static/css/main.bdc1827b.css",
-    "main.js": "/subham-portfolio/static/js/main.bb047d64.js",
+    "main.js": "/subham-portfolio/static/js/main.9a2867c6.js",
     "static/media/subham_resume.pdf": "/subham-portfolio/static/media/subham_resume.2630bbd0bd2cb9610102.pdf",
     "static/media/sending.gif": "/subham-portfolio/static/media/sending.45a6997c21522c71a7d4.gif",
     "static/media/DSC000812.png": "/subham-portfolio/static/media/DSC000812.1455ef5b4c3afe7fca7a.png",
@@ -37,10 +37,10 @@
     "static/media/git.webp": "/subham-portfolio/static/media/git.19eed4c2d3d1272efc9d.webp",
     "index.html": "/subham-portfolio/index.html",
     "main.bdc1827b.css.map": "/subham-portfolio/static/css/main.bdc1827b.css.map",
-    "main.bb047d64.js.map": "/subham-portfolio/static/js/main.bb047d64.js.map"
+    "main.9a2867c6.js.map": "/subham-portfolio/static/js/main.9a2867c6.js.map"
   },
   "entrypoints": [
     "static/css/main.bdc1827b.css",
-    "static/js/main.bb047d64.js"
+    "static/js/main.9a2867c6.js"
   ]
 }
