@@ -65,7 +65,7 @@ export const ProjectList = [
     name: "Movies World",
     description: `movie search engine where you may look for any movie and read details about the movie you were looking for.`,
     image: movie,
-    live: "https://movie-application-z1lw.onrender.com/",
+    live: "https://movie-application-s6ln.onrender.com",
     tech: [react, chakra],
     repo: "https://github.com/Subham1901/Movie-Application",
   },
