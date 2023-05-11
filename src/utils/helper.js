@@ -7,7 +7,7 @@ import mongo from "../assets/mongo.webp";
 import express from "../assets/express.webp";
 import redux from "../assets/redux.webp";
 import chakra from "../assets/chakra.webp";
-import movie from "../assets/movieworld.webp";
+import movie from "../assets/movie.webp";
 import blog from "../assets/blog.webp";
 import coin from "../assets/Coin.webp";
 import memories from "../assets/memories.png";
@@ -15,7 +15,7 @@ import share from "../assets/share.png";
 import food from "../assets/food247.webp";
 export const theme = extendTheme({
   fonts: {
-    font: `'montserrat'`,
+    font: `'montserrat', sans-serif`,
   },
   colors: {
     brand: {
@@ -62,8 +62,8 @@ export const ProjectList = [
     repo: "https://github.com/Subham1901/memories_app_frontend",
   },
   {
-    name: "Movies World",
-    description: `movie search engine where you may look for any movie and read details about the movie you were looking for.`,
+    name: "Filmy",
+    description: `Filmy is an online movie list application that shows several categories, such as top-rated, trending, and recommended movies. Additionally, it has an inbuilt search engine where you can type any type of movie name to receive additional details.`,
     image: movie,
     live: "https://movie-application-s6ln.onrender.com",
     tech: [react, chakra],
