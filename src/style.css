@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Outfit:wght@200;300;400;500;600&display=swap");
 * {
   scroll-behavior: smooth;
   padding: 0;
@@ -32,8 +32,9 @@ body {
 }
 
 .logo {
-  height: 120px;
-  cursor: pointer;
+  color: #f9f4da;
+  font-size: 20px;
+  font-family: "Fira Code", monospace !important;
 }
 
 .menu-icon {

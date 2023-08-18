@@ -43,17 +43,22 @@ const Projects = () => {
             m={10}
           >
             <Img src={data?.image} />
-            <Heading textAlign={"center"} fontSize={20} color={"#12b5e5"}>
+            <Heading
+              mt={2}
+              textAlign={"center"}
+              fontSize={20}
+              color={"#12b5e5"}
+            >
               {data?.name.toUpperCase()}
             </Heading>
-            <Text
+            {/* <Text
               fontWeight={"light"}
               padding={2}
               color={"#f9f4da"}
               textAlign={"center"}
             >
               {data?.description}
-            </Text>
+            </Text> */}
             <Box
               padding={2}
               display={"flex"}

@@ -13,6 +13,8 @@ import coin from "../assets/Coin.webp";
 import memories from "../assets/memories.png";
 import share from "../assets/share.png";
 import food from "../assets/food247.webp";
+import youtube from "../assets/youtube.png";
+import bubble from "../assets/bubble.png";
 export const theme = extendTheme({
   fonts: {
     font: `'montserrat', sans-serif`,
@@ -33,12 +35,28 @@ export const theme = extendTheme({
 
 export const ProjectList = [
   {
+    name: "Youtube Clone",
+    description: `Youtube clone application thats gives the features like YouTube`,
+    image: youtube,
+    live: "https://youtube-alpha-tan.vercel.app/",
+    tech: [react, node, express, redux, mongo, chakra],
+    repo: "https://github.com/Subham1901/YouTube_PC",
+  },
+
+  {
     name: "Food247",
     description: `An online food application, where users can browse any restaurant and add items to their cart.`,
     image: food,
     live: "https://247food.netlify.app/",
     tech: [react, node, express, redux, mongo, chakra],
     repo: "https://github.com/Subham1901/namaste_react_code/tree/master/Chapter-4%20coding",
+  },
+  {
+    name: "Bubble Game",
+    image: bubble,
+    live: "https://bubble-game-alpha.vercel.app/",
+    tech: [react],
+    repo: "https://github.com/Subham1901/bubble-game",
   },
 
   {

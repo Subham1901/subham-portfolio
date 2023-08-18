@@ -15,7 +15,10 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <h2 style={{ color: "#f9f4da", fontSize: "20px" }}>{"<SUBHAM />"}</h2>
+        <a className="logo" href="#home">
+          {"<SUBHAM />"}
+        </a>
+
         <div className="menu-icon" onClick={handleShowNavbar}>
           <AiOutlineMenu size={30} />
         </div>
