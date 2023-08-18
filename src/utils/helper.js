@@ -21,7 +21,7 @@ export const theme = extendTheme({
     brand: {
       primary: "#161b40",
       // ...
-      secondary: "#43bee5",
+      secondary: "#12b5e5",
       outline: "#ADE8F4",
       red: "#f40058",
       ylw: "#efa500",
@@ -71,7 +71,7 @@ export const ProjectList = [
   },
   {
     name: "Blog Application",
-    description: `an online application where you may add popular places and view places that other users have added. The places can be updated, deleted, and uploaded if you are logged into the application.`,
+    description: `An online application where you may add popular places and view places that other users have added. The places can be updated, deleted, and uploaded if you are logged into the application.`,
     image: blog,
     live: "https://blogappv1.netlify.app/",
     repo: "https://github.com/Subham1901/Blog-Application",
@@ -79,7 +79,7 @@ export const ProjectList = [
   },
   {
     name: "Crypto Stack",
-    description: `a crypto application where you can view various cryptocurrencies (such as Bitcoin, Ethereum, Dogecoin, etc.).
+    description: `A crypto application where you can view various cryptocurrencies (such as Bitcoin, Ethereum, Dogecoin, etc.).
 You can also browse market information based on a particular currency.`,
     image: coin,
     live: "https://cryptoapplication.onrender.com/",

@@ -1,10 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap");
+
 * {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  font-family: "Outfit", sans-serif !important;
 }
 
-span {
+body {
+  background-color: #242424 !important;
+}
+.container {
+  color: white;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100% !important;
+  z-index: 10;
+
+  transition: transform 9s ease-in-out;
+  height: 60px;
+  background-color: #242424 !important;
+}
+
+.logo {
+  height: 120px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #f9f4da;
+  text-decoration: none;
+}
+.nav-elements ul a::after {
+  border-radius: 5px;
+  content: "";
+  height: 4px;
+  background-color: rgb(99, 99, 99);
+  display: block;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.2s ease-in;
+}
+
+.nav-elements ul a:hover::after {
+  transform: scaleX(100%);
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    background-color: #242424 !important;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+    width: 0px;
+    height: 50vh;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .nav-elements.active {
+    width: 100%;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-left: 40%;
+
+    margin-top: 12px;
+  }
+  .nav-elements ul a::after {
+    content: "";
+    border-radius: 5px;
+    height: 4px;
+    width: 30%;
+    background-color: rgb(99, 99, 99);
+    display: block;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.2s ease-in;
+  }
+}
+
+.subham {
   letter-spacing: 2px !important;
 
   background: linear-gradient(
@@ -27,6 +146,14 @@ span {
   }
 }
 
+.typed {
+  text-align: left;
+  font-weight: 500;
+
+  font-size: xx-large;
+  color: #12b5e5;
+}
+
 .linkedin:hover {
   color: #0a66c2;
 }
@@ -39,12 +166,13 @@ span {
 }
 
 .card {
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  background-color: black;
+  border-radius: 20px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
-
+.skill-cont {
+  box-shadow: 15px 15px 30px rgb(25, 25, 25);
+}
 .card-content {
   background: rgba(202, 240, 248, 0.7);
   position: absolute;
@@ -79,15 +207,36 @@ span {
 
 .input-area {
   display: block;
-  margin: 2rem;
-  color: #ade8f4;
-  background-color: #161b40 !important;
+  margin: 30px;
+  outline: none !important;
+  border: none !important;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
 }
 
 .contact-button {
-  background-color: #43bee5 !important;
+  margin: 12px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  background: #333 !important;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px -5px 5px #444, 5px 5px 1px #222;
+  border: none;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
 }
-
+.contact-button:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
+}
 .header {
   position: sticky;
   top: 0;
@@ -112,4 +261,22 @@ span {
   font-size: medium;
   font-weight: 600;
   letter-spacing: 2px;
+}
+.top-container {
+  background-color: #242424;
+}
+.bars:not(:last-child) {
+  margin-right: 40px;
+}
+.contact {
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+.message,
+.subham {
+  font-family: "Courier New", Courier, monospace !important;
+}
+@media (max-width: 768px) {
+  .typed {
+    font-size: x-large;
+  }
 }

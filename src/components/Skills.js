@@ -25,24 +25,33 @@ import css from "../assets/css.webp";
 import sql from "../assets/mysql.webp";
 import firebase from "../assets/firebase.webp";
 import Swing from "react-reveal/Swing";
+import Progressbar from "../layouts/Progressbar";
+import Aos from "aos";
+import { useEffect } from "react";
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <Container id="skill" p={2} maxW={"100%"} bgColor={"brand.skill"}>
+    <Container data-aos="fade-up" id="skill" p={2} maxW={"100%"}>
       <Heading
         p={5}
-        textAlign={"center"}
+        textAlign={"left"}
         color={"brand.secondary"}
         fontFamily={"font"}
-        fontWeight={"extrabold"}
+        fontWeight={"normal"}
       >
         Skills & Experience
       </Heading>
-      <Stack justifyContent={"center"} display={"flex"} alignItems={"center"}>
+      <Stack
+        justifyContent={"center"}
+        display={"flex"}
+        flexWrap={"wrap"}
+        alignItems={"center"}
+      >
         <Box
           p={2}
           borderRadius={"md"}
-          shadow={"sm"}
-          w={["xs", "xs", "md", "2xl"]}
           display={"flex"}
           flexWrap="wrap"
           flexDirection="row"
@@ -54,7 +63,6 @@ const Skills = () => {
               m={3}
               w={["40px", "80px"]}
               objectFit={"cover"}
-              size={["md", "xl"]}
               name="node"
               src={node}
             />
@@ -65,7 +73,6 @@ const Skills = () => {
               m={3}
               w={["40px", "80px"]}
               objectFit={"cover"}
-              size={["md", "xl"]}
               name="node"
               src={express}
             />
@@ -76,7 +83,6 @@ const Skills = () => {
               m={3}
               w={["40px", "80px"]}
               objectFit={"cover"}
-              size={["md", "xl"]}
               name="node"
               src={react}
             />
@@ -87,7 +93,6 @@ const Skills = () => {
               m={3}
               w={["40px", "80px"]}
               objectFit={"cover"}
-              size={["md", "xl"]}
               name="node"
               src={redux}
             />
@@ -180,6 +185,22 @@ const Skills = () => {
               src={firebase}
             />
           </Swing>
+        </Box>
+        <Box
+          display={"flex"}
+          justifyContent={"center"}
+          padding={10}
+          className="skill-progress"
+        >
+          <div className="bars">
+            <Progressbar name={"Front-End"} percent={85} />
+          </div>
+          <div className="bars">
+            <Progressbar name={"Back-End"} percent={60} />
+          </div>
+          <div className="bars">
+            <Progressbar name={"Full-Stack"} percent={72} />
+          </div>
         </Box>
       </Stack>
     </Container>

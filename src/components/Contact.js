@@ -20,6 +20,7 @@ import { GrMail } from "react-icons/gr";
 import { AiFillPhone } from "react-icons/ai";
 import gif from "../assets/sending.gif";
 import { Link } from "react-router-dom";
+import Aos from "aos";
 const Contact = () => {
   const toast = useToast();
   const [name, setName] = useState("");
@@ -74,23 +75,17 @@ const Contact = () => {
     );
   }
   return (
-    <Container
-      id="contact"
-      p={5}
-      bgColor={"brand.primary"}
-      mt={10}
-      maxW={"100%"}
-    >
+    <Container id="contact" p={5} mt={10} maxW={"100%"}>
       <Heading
         p={5}
-        textAlign={"center"}
+        textAlign={"left"}
         fontFamily={"font"}
-        fontWeight={"extrabold"}
+        fontWeight={"normal"}
         color={"brand.secondary"}
       >
         Connect with me!
       </Heading>
-      <Container maxW={"container.xl"}>
+      <Container className="contact" borderRadius={"lg"} maxW={"container.xl"}>
         <HStack
           display={"flex"}
           flexDirection={["column", "column", "column", "row", "row"]}
@@ -98,6 +93,7 @@ const Contact = () => {
           alignItems={"center"}
         >
           <Box
+            data-aos={"zoom-in-down"}
             w={["xs", "sm", "lg", "2xl"]}
             display={"flex"}
             flexDirection={"column"}
@@ -106,11 +102,10 @@ const Contact = () => {
             p={5}
           >
             <Text
-              color={"brand.outline"}
+              color={"#dbdbdb"}
               textAlign={"center"}
               fontSize={["md", "lg"]}
-              fontFamily={"font"}
-              fontWeight={"medium"}
+              fontWeight={"light"}
             >
               If you're seeking someone who can build reliable, fast, and modern
               web applications, get in touch with me!
@@ -119,6 +114,7 @@ const Contact = () => {
           </Box>
           <Box
             p={2}
+            data-aos={"zoom-in-down"}
             overflow={"hidden"}
             display={"flex"}
             flexDirection={"column"}
@@ -159,7 +155,6 @@ const Contact = () => {
               <Button
                 ml={8}
                 isLoading={loading}
-                colorScheme="blue"
                 letterSpacing={"5px"}
                 loadingText="Sending..."
                 className="contact-button"
