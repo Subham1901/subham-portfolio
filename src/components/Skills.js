@@ -27,6 +27,7 @@ import firebase from "../assets/firebase.webp";
 import Swing from "react-reveal/Swing";
 import Progressbar from "../layouts/Progressbar";
 import Aos from "aos";
+import next from "../assets/next.png";
 import { useEffect } from "react";
 const Skills = () => {
   useEffect(() => {
@@ -85,6 +86,16 @@ const Skills = () => {
               objectFit={"cover"}
               name="node"
               src={react}
+            />
+          </Swing>
+          <Swing>
+            {" "}
+            <Img
+              m={3}
+              w={["40px", "80px"]}
+              objectFit={"cover"}
+              name="node"
+              src={next}
             />
           </Swing>
           <Swing>
