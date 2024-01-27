@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/subham-portfolio/static/css/main.4ab8665d.css",
-    "main.js": "/subham-portfolio/static/js/main.5eb2cc6b.js",
+    "main.js": "/subham-portfolio/static/js/main.93bf4186.js",
     "static/media/youtube.png": "/subham-portfolio/static/media/youtube.9f8a65e7ea52abde9b2f.png",
     "static/media/sending.gif": "/subham-portfolio/static/media/sending.45a6997c21522c71a7d4.gif",
     "static/media/DSC000812.png": "/subham-portfolio/static/media/DSC000812.1455ef5b4c3afe7fca7a.png",
@@ -12,11 +12,11 @@
     "static/media/movie.webp": "/subham-portfolio/static/media/movie.eea047e318cc569d6e3f.webp",
     "static/media/montserrat-all-400-normal.woff": "/subham-portfolio/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff",
     "static/media/share.png": "/subham-portfolio/static/media/share.3130cacd43380f174a27.png",
-    "static/media/next.png": "/subham-portfolio/static/media/next.37ce8fc7b8f8dd2ce994.png",
     "static/media/Coin.webp": "/subham-portfolio/static/media/Coin.d2d8915e67adbb2bd68c.webp",
     "static/media/catamaran-all-400-normal.woff": "/subham-portfolio/static/media/catamaran-all-400-normal.8f1713a8b31f8511cd99.woff",
     "static/media/blog.webp": "/subham-portfolio/static/media/blog.595e5a6e6b20db0493a0.webp",
     "static/media/firebase.webp": "/subham-portfolio/static/media/firebase.a3dec758e220cb3938b0.webp",
+    "static/media/next.png": "/subham-portfolio/static/media/next.e01278f5cd5f34baadad.png",
     "static/media/java.webp": "/subham-portfolio/static/media/java.aad984364e3394282f96.webp",
     "static/media/nodejs.webp": "/subham-portfolio/static/media/nodejs.810b3ced6c714b9f6286.webp",
     "static/media/montserrat-latin-400-normal.woff2": "/subham-portfolio/static/media/montserrat-latin-400-normal.acb6629fe45c43ad5d8b.woff2",
@@ -40,10 +40,10 @@
     "static/media/git.webp": "/subham-portfolio/static/media/git.19eed4c2d3d1272efc9d.webp",
     "index.html": "/subham-portfolio/index.html",
     "main.4ab8665d.css.map": "/subham-portfolio/static/css/main.4ab8665d.css.map",
-    "main.5eb2cc6b.js.map": "/subham-portfolio/static/js/main.5eb2cc6b.js.map"
+    "main.93bf4186.js.map": "/subham-portfolio/static/js/main.93bf4186.js.map"
   },
   "entrypoints": [
     "static/css/main.4ab8665d.css",
-    "static/js/main.5eb2cc6b.js"
+    "static/js/main.93bf4186.js"
   ]
 }
