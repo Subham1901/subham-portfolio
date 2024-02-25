@@ -15,6 +15,10 @@ import share from "../assets/share.png";
 import food from "../assets/food247.webp";
 import youtube from "../assets/youtube.png";
 import bubble from "../assets/bubble.png";
+import mysql from "../assets/mysql.webp";
+import mui from "../assets/mui.png";
+import firebase from "../assets/firebase.webp";
+import arpay from "../assets/arpay.png";
 export const theme = extendTheme({
   fonts: {
     font: `'montserrat', sans-serif`,
@@ -35,11 +39,19 @@ export const theme = extendTheme({
 
 export const ProjectList = [
   {
+    name: "AR Payment",
+    description: `AR Pay: B2B app streamlines AR management. Users process payments via Stripe, access detailed insights, and generate statistical reports for informed decisions. Enhances efficiency and transparency in handling outstanding payments, aiding financial management.`,
+    image: arpay,
+    live: "https://ar-pay.vercel.app/",
+    tech: [react, redux, mui, node, express, firebase],
+    repo: "https://github.com/Subham1901/AR-Pay",
+  },
+  {
     name: "Youtube Clone",
     description: `Youtube clone application thats gives the features like YouTube`,
     image: youtube,
     live: "https://youtube-alpha-tan.vercel.app/",
-    tech: [react, node, express, redux, mongo, chakra],
+    tech: [react, node, express, redux, mysql, chakra],
     repo: "https://github.com/Subham1901/YouTube_PC",
   },
 

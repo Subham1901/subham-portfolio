@@ -29,6 +29,8 @@ import Progressbar from "../layouts/Progressbar";
 import Aos from "aos";
 import next from "../assets/next.png";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import mui from "../assets/mui.png";
 const Skills = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -59,7 +61,35 @@ const Skills = () => {
           justifyContent="center"
           alignItems={"center"}
         >
-          <Swing>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            {" "}
+            <Img
+              m={3}
+              w={["40px", "80px"]}
+              objectFit={"cover"}
+              size={["md", "xl"]}
+              borderRadius={"50%"}
+              name="node"
+              src={js}
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             <Img
               m={3}
               w={["40px", "80px"]}
@@ -67,8 +97,16 @@ const Skills = () => {
               name="node"
               src={node}
             />
-          </Swing>
-          <Swing>
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
             <Img
               m={3}
@@ -76,9 +114,17 @@ const Skills = () => {
               objectFit={"cover"}
               name="node"
               src={express}
-            />
-          </Swing>
-          <Swing>
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
             <Img
               m={3}
@@ -86,9 +132,16 @@ const Skills = () => {
               objectFit={"cover"}
               name="node"
               src={react}
-            />
-          </Swing>
-          <Swing>
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "100%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
             <Img
               m={3}
@@ -96,41 +149,71 @@ const Skills = () => {
               objectFit={"cover"}
               name="node"
               src={next}
-            />
-          </Swing>
-          <Swing>
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "100%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
+            <Img
+              m={3}
+              w={["40px", "80px"]}
+              objectFit={"cover"}
+              name="node"
+              src={mui}
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             <Img
               m={3}
               w={["40px", "80px"]}
               objectFit={"cover"}
               name="node"
               src={redux}
-            />
-          </Swing>
-          <Swing>
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
             <Img
               m={3}
               w={["40px", "80px"]}
+              borderRadius={"50%"}
               objectFit={"cover"}
               size={["md", "xl"]}
               name="node"
               src={mongo}
-            />
-          </Swing>
-          <Swing>
-            {" "}
-            <Img
-              m={3}
-              w={["40px", "80px"]}
-              objectFit={"cover"}
-              size={["md", "xl"]}
-              name="node"
-              src={js}
-            />
-          </Swing>
-          <Swing>
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
             <Img
               w={["40px", "80px"]}
@@ -139,43 +222,38 @@ const Skills = () => {
               size={["md", "xl"]}
               name="node"
               src={git}
-            />
-          </Swing>
-          <Swing>
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             {" "}
             <Img
               m={3}
               w={["40px", "80px"]}
               objectFit={"cover"}
+              borderRadius={"50%"}
               size={["md", "xl"]}
               name="node"
               src={chakra}
-            />
-          </Swing>
-          <Swing>
-            {" "}
-            <Img
-              m={3}
-              w={["40px", "80px"]}
-              objectFit={"cover"}
-              size={["md", "xl"]}
-              name="node"
-              src={java}
-            />
-          </Swing>
-          <Swing>
-            {" "}
-            <Img
-              m={3}
-              w={["40px", "80px"]}
-              objectFit={"cover"}
-              size={["md", "xl"]}
-              name="node"
-              src={api}
-            />
-          </Swing>
-          <Swing>
-            {" "}
+            />{" "}
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "#f9f4da",
+              borderRadius: "50%",
+              translateY: "-10%",
+              translateY: "-10%",
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             <Img
               m={3}
               w={["40px", "80px"]}
@@ -183,19 +261,8 @@ const Skills = () => {
               size={["md", "xl"]}
               name="node"
               src={sql}
-            />
-          </Swing>
-          <Swing>
-            {" "}
-            <Img
-              m={3}
-              w={["40px", "80px"]}
-              objectFit={"cover"}
-              size={["md", "xl"]}
-              name="node"
-              src={firebase}
-            />
-          </Swing>
+            />{" "}
+          </motion.a>
         </Box>
         <Box
           display={"flex"}

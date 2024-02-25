@@ -5,6 +5,8 @@ import {
   Container,
   Flex,
   Heading,
+  Image,
+  Img,
   Link,
   Text,
   VStack,
@@ -21,6 +23,7 @@ import Skills from "./Skills";
 import Typed from "react-typed";
 import Aos from "aos";
 import { useEffect } from "react";
+import subham from "../assets/subham1.png";
 const MainContent = () => {
   return (
     <Container
@@ -33,13 +36,14 @@ const MainContent = () => {
       alignItems={"center"}
       maxW={"container.lg"}
     >
-      <Avatar
-        h={["100px", "250px"]}
-        w={["100px", "250px"]}
-        src={pic}
+      {/* <Avatar
+        h={["100px", "200px"]}
+        w={["100px", "200px"]}
+        src={subham}
         objectFit={"cover"}
         loading="eager"
-      />
+      /> */}
+      <Img src={subham} height={[250, 300]} />
 
       <VStack display={"flex"}>
         <Flex flexDir={"column"}>
@@ -78,12 +82,12 @@ const MainContent = () => {
             fontFamily={"font"}
             color={"#dbdbdb"}
           >
-            Full-stack developer with 1+ year's worth of practical experience
-            building scalable solutions using a variety of full-stack
-            technologies, including JavaScript, React.js, Node.js, Express.js,
-            MongoDB, MySQL, etc. In addition, I've worked with payment
-            integration for a variety of payment options, including credit
-            cards, ACH, eChecks, etc.
+            Front End developer having nearly two year's worth of practical
+            experience building scalable solutions using a variety of full-stack
+            technologies, including JavaScript, React.js, Next.js, Node.js,
+            Express.js, MongoDB, MySQL, etc. In addition, I've worked with
+            payment integration for a variety of payment options, including
+            credit cards, ACH, eChecks, etc.
           </Text>
         </motion.div>
 
